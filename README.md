@@ -1,5 +1,7 @@
 # 🧠 Medical Image Data Augmentation Using DCGAN with CNN Classification
 
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://www.python.org/) [![TensorFlow](https://img.shields.io/badge/Framework-TensorFlow-orange.svg)](https://www.tensorflow.org/) [![Keras](https://img.shields.io/badge/Framework-Keras-red.svg)](https://keras.io/) [![Gradio](https://img.shields.io/badge/UI-Gradio-green.svg)](https://gradio.app/) [![Deployment](https://img.shields.io/badge/Deployment-Colab%2FKaggle%2FJupyter-blue.svg)](#)
+
 This project demonstrates how GAN-based synthetic medical image generation can improve disease classification performance in data-scarce and imbalanced medical datasets. A DCGAN is used to generate synthetic pneumonia chest X-ray images, which are combined with real data to train a CNN classifier, followed by an interactive Gradio-based web UI for real-time prediction.
 
 ---
@@ -76,14 +78,12 @@ graph TD
 ## 🖥️ Screenshots
 
 | GAN Generated Chest X-rays                | Real Chest X-rays                      |
-|:-----------------------------------------:|:--------------------------------------:|
-| ![GAN vs Real](Screenshots/Real and GAN Images Comparison.png) | ![Real X-rays](Screenshots/Real and GAN Images Comparison.png) |
+| :---------------------------------------: | :------------------------------------: |
+| ![GAN vs Real](Screenshots/Real%20and%20GAN%20Images%20Comparison.png) | ![Real X-rays](Screenshots/Real%20and%20GAN%20Images%20Comparison.png) |
 
 | CNN Accuracy Comparison                   | Gradio Web Interface (1)               | Gradio Web Interface (2)               |
-|:-----------------------------------------:|:--------------------------------------:|:--------------------------------------:|
-| ![Accuracy Curve](Screenshots/Accuracy Curve Comparison.png) | ![Gradio UI 1](Screenshots/Gradio UI - 1.png) | ![Gradio UI 2](Screenshots/Gradio UI - 2.png) |
-
-
+| :---------------------------------------: | :------------------------------------: | :------------------------------------: |
+| ![Accuracy Curve](Screenshots/Accuracy%20Curve%20Comparison.png) | ![Gradio UI 1](Screenshots/Gradio%20UI%20-%201.png) | ![Gradio UI 2](Screenshots/Gradio%20UI%20-%202.png) |
 
 ---
 
@@ -129,7 +129,9 @@ pip install tensorflow opencv-python matplotlib gradio kagglehub
 ### 4. Run All Cells
 
 - DCGAN trains first
+- CNN trains on real data
 - CNN trains on real & augmented data
+- Comparison of Accuracies of CNN trained on REAL and REAL + GAN Images
 - Gradio UI launches at the end
 
 ---
